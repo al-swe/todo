@@ -1,42 +1,71 @@
 :root {
-    --white: #FDF7FA;
-    --black: #050609;
-    --green: #62C370;
-    --red: #CC3363;
+  --white: #fdf7fa;
+  --black: #050609;
+  --green: #62c370;
+  --red: #cc3363;
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 body {
-    background-color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
 }
 
 .wrapper {
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .content {
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 55px rgba(0, 0, 0, 0.05);
-    padding: 4rem;
-    border-radius: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 55px rgba(0, 0, 0, 0.05);
+  padding: 4rem;
+  border-radius: 0.5rem;
 }
 
 .header {
-display: flex;
-justify-content: space-between;
-align-items: center;
-margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .input-section {
-    
+  display: flex;
+  margin: 2rem 0;
 }
+
+button,
+input {
+  padding: 0.5rem 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#addBtn {
+  background-color: var(--green);
+  color: var(--white);
+}
+
+#clearBtn {
+    background-color: var(--red);
+    color: var(--white);
+    border-radius: 0 5px 5px 0;
+}
+
+input {
+  border-radius: 5px 0 0 5px;
+}
+
+
