@@ -1,2 +1,0 @@
-- Crete readme.md
-- Add comments to things
