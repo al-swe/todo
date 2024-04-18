@@ -25,7 +25,7 @@ body {
 }
 
 .content {
-    min-width: 50vw;
+  min-width: 50vw;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-shadow: 0 0 55px rgba(0, 0, 0, 0.05);
   padding: 4rem;
@@ -51,9 +51,9 @@ input {
 }
 
 button {
-    cursor: pointer;
-    transition: ease-in-out 0.5s;
-    white-space: nowrap;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+  white-space: nowrap;
 }
 
 #addBtn {
@@ -62,17 +62,17 @@ button {
 }
 
 #addBtn:hover {
-    background-color: #80e28f;
+  background-color: #80e28f;
 }
 
 #clearBtn {
-    background-color: var(--red);
-    color: var(--white);
-    border-radius: 0 5px 5px 0;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 0 5px 5px 0;
 }
 
 #clearBtn:hover {
-    background-color: #e75b88;
+  background-color: #e75b88;
 }
 
 input {
@@ -81,36 +81,36 @@ input {
 }
 
 ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 li {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
 }
 
 li:not(:last-child) {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 li button {
-    background-color: var(--red);
-    color: var(--white);
-    border-radius: 5px;
+  background-color: var(--red);
+  color: var(--white);
+  border-radius: 5px;
 }
 
 li button:hover {
-    background-color: #e75b88;
+  background-color: #e75b88;
 }
 
 p {
-    color: var(--green);
-    text-align: center;
-    font-size: 18px;
+  color: var(--green);
+  text-align: center;
+  font-size: 18px;
 }
