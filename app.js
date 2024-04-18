@@ -39,7 +39,7 @@ function getTasks() {
   const tasks = getTasksFromLocalStorage();
 
   if (tasks.length === 0) {
-    const message = document.createElement("li");
+    const message = document.createElement("p");
     message.textContent = "All tasks completed!";
     taskList.appendChild(message);
   } else {
@@ -48,7 +48,9 @@ function getTasks() {
       taskItem.textContent = task.name;
 
       const deleteButton = document.createElement("button");
-      deleteButton.textContent = "Delete Task";
+      const icon = document.createElement("i");
+      icon.classList.add("fa-solid", "fa-xmark");
+      deleteButton.appendChild(icon);
       deleteButton.addEventListener("click", () => {
         removeTask(task.id);
       });
