@@ -16,13 +16,19 @@ function addTask() {
   const taskName = taskInput.value.trim();
 
   if (!taskName) {
-    alert("Please enter a valid task name!");
+    taskInput.classList.add("invalid");
+    setTimeout(() => {
+        taskInput.classList.remove("invalid");
+    }, 1000);
   } else {
     const tasks = getTasksFromLocalStorage();
     tasks.push({ id: Date.now(), name: taskName });
     saveTasksToLocalStorage(tasks);
     taskInput.value = "";
     getTasks();
+
+    const newTaskItem = taskList.lastElementChild;
+    newTaskItem.classList.add("grow");
   }
 }
 
