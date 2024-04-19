@@ -4,14 +4,17 @@ const clearBtn = document.getElementById("clearBtn");
 const taskList = document.getElementById("taskList");
 const taskNumber = document.getElementById("taskNumber");
 
+// Get tasks from localstorage or create empty array
 function getTasksFromLocalStorage() {
   return JSON.parse(localStorage.getItem("tasks")) || [];
 }
 
+// Save tasks to local storage
 function saveTasksToLocalStorage(tasks) {
   localStorage.setItem("tasks", JSON.stringify(tasks));
 }
 
+// Add new task to list
 function addTask() {
   const taskName = taskInput.value.trim();
 
@@ -32,6 +35,7 @@ function addTask() {
   }
 }
 
+// Remove a task from list by id
 function removeTask(id) {
   const tasks = getTasksFromLocalStorage();
   const updatedTasks = tasks.filter((task) => task.id !== id);
@@ -39,6 +43,7 @@ function removeTask(id) {
   getTasks();
 }
 
+// Retrieve tasks from localstorage and populate DOM
 function getTasks() {
   taskList.innerHTML = "";
 
